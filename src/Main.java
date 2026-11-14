@@ -7,6 +7,7 @@ public class Main {
         // Build two objects from the same Car blueprint
         Car car1 = new Car("Toyota");
         Car car2 = new Car("Honda");
+        Animal sigmaAnimal = new Animal("Tung", 12);
 
         // Use the dot to call methods on each object
         car1.accelerate();
@@ -19,5 +20,9 @@ public class Main {
 
         car1.brake();
         System.out.println(car1.brand + " speed: " + car1.speed); // Toyota speed: 0
+
+        sigmaAnimal.sound();
+        System.out.println(sigmaAnimal.getName() + " is " + sigmaAnimal.getAge() + " years old");
+
     }
 }
