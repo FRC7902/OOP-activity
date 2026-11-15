@@ -8,6 +8,7 @@ public class Main {
         Car car1 = new Car("Toyota");
         Car car2 = new Car("Honda");
         Animal sigmaAnimal = new Animal("Tung", 12);
+        Animal alphaAnimal = new Animal("Sahur", 9);
 
         // Use the dot to call methods on each object
         car1.accelerate();
@@ -22,7 +23,9 @@ public class Main {
         System.out.println(car1.brand + " speed: " + car1.speed); // Toyota speed: 0
 
         sigmaAnimal.sound();
+        alphaAnimal.sound();
         System.out.println(sigmaAnimal.getName() + " is " + sigmaAnimal.getAge() + " years old");
+        System.out.println(alphaAnimal.getName() + " is " + alphaAnimal.getAge() + " years old");
 
     }
 }
