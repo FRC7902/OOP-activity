@@ -5,19 +5,13 @@ public class Main {
 
     public static void main(String[] args) {
         // Build two objects from the same Car blueprint
-        Car car1 = new Car("Toyota");
-        Car car2 = new Car("Honda");
+        Plane plane1 = new Plane("Cathay Pacific");
+        Plane plane2 = new Plane("Air Canada");
 
-        // Use the dot to call methods on each object
-        car1.accelerate();
-        car1.accelerate();
-        car2.accelerate();
+        plane1.takeOff(10);
+        plane2.takeOff(15);
 
-        // Each object keeps its own values
-        System.out.println(car1.brand + " speed: " + car1.speed); // Toyota speed: 20
-        System.out.println(car2.brand + " speed: " + car2.speed); // Honda speed: 10
-
-        car1.brake();
-        System.out.println(car1.brand + " speed: " + car1.speed); // Toyota speed: 0
+        System.out.println("Plane 1: " + plane1.company + " Flight Time: " + plane1.flight_t);
+        System.out.println("Plane 2: " + plane2.company + " Flight Time: " + plane2.flight_t);
     }
 }
